@@ -39,6 +39,12 @@ body.pre .cover2 *,body.pre .cover2{animation-play-state:paused!important}
 .music-btn.on{animation:pulse 2.4s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(216,178,92,.45)}50%{box-shadow:0 0 0 10px rgba(216,178,92,0)}}
 .music-btn .off{display:none}.music-btn:not(.on) .off{display:block}.music-btn:not(.on) .onI{display:none}
+.pay{width:100%;max-width:360px;display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px 14px;border:1px solid var(--line);background:rgba(216,178,92,.05)}
+.pay .copy{justify-content:center}
+.pay-k{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.pay .copy-val{font-size:1.15rem}
+.pay p{font-size:.88rem}
+.pay .btn{white-space:nowrap;letter-spacing:.12em;padding:13px 20px}
 </style>
 <title>Fer · 20 + 20 de experiencia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -382,19 +388,15 @@ footer .fer{font-size:3rem;margin:0}
       <div><b class="gold">2 cuotas</b><span>de $32.500</span></div>
       <div><b class="gold">Hasta el 10/01</b><span>fecha límite</span></div>
     </div>
+    <div class="pay">
+      <span class="label">Datos para transferir</span>
+      <div class="copy"><span class="pay-k">Alias</span><code class="copy-val">nandi2024</code><button type="button" class="copy-btn">Copiar</button></div>
+      <p class="soft">A nombre de <strong style="color:var(--white);font-weight:600">Maria Fernanda Cordoba</strong> · Mercado Pago</p>
+      <a class="btn" href="https://mpago.la/2qDSiPx" target="_blank" rel="noopener">Pagar con Mercado Pago</a>
+    </div>
     <div class="menu">
-      <span class="label">Menú</span>
-      <div class="soon gold">Lunch</div>
-      <ul class="menu-list">
-        <li>Sándwiches de miga</li>
-        <li>Tabla de picada</li>
-        <li>Empanadas fritas de carne</li>
-        <li>Pata de ternera</li>
-        <li>Papas fritas</li>
-        <li>Pizzas</li>
-        <li>Mesa dulce</li>
-      </ul>
-      <span class="pill">Incluye bebida</span>
+      <span class="pill">Incluye comida y bebida</span>
+      <p class="soft">¿Necesitás un menú especial (celíaco, vegetariano u otro)? Avisanos con tiempo así lo tenemos en cuenta.</p>
     </div>
   </section>
 
@@ -405,11 +407,11 @@ footer .fer{font-size:3rem;margin:0}
     <span class="label">Reservá la fecha</span>
     <h2>¿Brindamos juntos?</h2>
     <div class="rsvp-step">
-      <a class="btn solid big" href="https://wa.me/5493435496106?text=%C2%A1Hola%20Fer%21%20Me%20guardo%20la%20fecha%20%F0%9F%A5%82%20S%C3%A1bado%2023%20de%20enero%2C%20ah%C3%AD%20estar%C3%A9." target="_blank" rel="noopener">¡Me guardo la fecha! 🥂</a>
+      <a class="btn solid big" href="https://wa.me/5493435415397?text=%C2%A1Hola%20Fer%21%20Me%20guardo%20la%20fecha%20%F0%9F%A5%82%20S%C3%A1bado%2023%20de%20enero%2C%20ah%C3%AD%20estar%C3%A9." target="_blank" rel="noopener">¡Me guardo la fecha! 🥂</a>
       <p class="soft">Avisame que contás con la fecha.</p>
     </div>
     <div class="rsvp-step">
-      <a class="btn big" href="https://wa.me/5493435496106?text=%C2%A1Hola%20Fer%21%20Quiero%20confirmar%20mi%20asistencia%20a%20tus%2040%20y%20pagar%20la%20tarjeta.%20%C2%BFMe%20pas%C3%A1s%20los%20datos%3F" target="_blank" rel="noopener">Confirmar asistencia</a>
+      <a class="btn big" href="https://wa.me/5493435415397?text=%C2%A1Hola%20Fer%21%20Quiero%20confirmar%20mi%20asistencia%20a%20tus%2040%20y%20pagar%20la%20tarjeta.%20%C2%BFMe%20pas%C3%A1s%20los%20datos%3F" target="_blank" rel="noopener">Confirmar asistencia</a>
       <p class="soft">Se confirma con el pago de la tarjeta antes del <strong style="color:var(--white);font-weight:600">10/01/2027</strong>.</p>
     </div>
   </section>
@@ -426,14 +428,15 @@ footer .fer{font-size:3rem;margin:0}
         <summary><span><span class="h">Música</span><small>Sugerí una canción</small></span></summary>
         <div class="det-body">
           <p>¿Qué tema no puede faltar en la pista? Mandámelo y lo sumo a la lista.</p>
-          <div><a class="btn" href="https://wa.me/5493435496106?text=Para%20tus%2040%20no%20puede%20faltar%3A%20" target="_blank" rel="noopener">Sugerir canción</a></div>
+          <div><a class="btn" href="https://wa.me/5493435415397?text=Para%20tus%2040%20no%20puede%20faltar%3A%20" target="_blank" rel="noopener">Sugerir canción</a></div>
         </div>
       </details>
       <details>
         <summary><span><span class="h">Pago de la tarjeta</span><small>Datos para transferir</small></span></summary>
         <div class="det-body">
-          <p>Podés pagar en <strong>dos cuotas de $32.500</strong> antes del <strong>10 de enero</strong>. Alias:</p>
-          <div class="copy"><code id="alias">fer.cuarenta</code><button type="button" id="copyBtn">Copiar</button></div>
+          <p>Podés pagar en <strong>dos cuotas de $32.500</strong> antes del <strong>10 de enero</strong>. Alias a nombre de <strong>Maria Fernanda Cordoba</strong> (Mercado Pago):</p>
+          <div class="copy"><code class="copy-val">nandi2024</code><button type="button" class="copy-btn">Copiar</button></div>
+          <div><a class="btn" href="https://mpago.la/2qDSiPx" target="_blank" rel="noopener">Pagar con Mercado Pago</a></div>
         </div>
       </details>
     </div>
@@ -470,11 +473,13 @@ footer .fer{font-size:3rem;margin:0}
   tick(); setInterval(tick,1000);
 
   /* copiar alias */
-  var btn = document.getElementById("copyBtn"), alias = document.getElementById("alias");
-  btn.addEventListener("click", function(){
-    function done(){btn.textContent="Copiado";setTimeout(function(){btn.textContent="Copiar"},1800)}
-    function fallback(){var r=document.createRange();r.selectNodeContents(alias);var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent="Seleccionado"}
-    try{ navigator.clipboard.writeText(alias.textContent).then(done, fallback); }catch(e){ fallback(); }
+  document.querySelectorAll(".copy-btn").forEach(function(btn){
+    var alias = btn.parentNode.querySelector(".copy-val");
+    btn.addEventListener("click", function(){
+      function done(){btn.textContent="Copiado";setTimeout(function(){btn.textContent="Copiar"},1800)}
+      function fallback(){var r=document.createRange();r.selectNodeContents(alias);var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent="Seleccionado"}
+      try{ navigator.clipboard.writeText(alias.textContent).then(done, fallback); }catch(e){ fallback(); }
+    });
   });
 
   /* brillos de fondo: puntos plateados y dorados, bokeh y destellos */
